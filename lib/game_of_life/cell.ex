@@ -1,4 +1,8 @@
 defmodule GameOfLife.Cell do
+  def become_alive?(alive_cells, {x, y} = _dead_cell) do
+    3 == count_neighbours(alive_cells, x, y, 0)
+  end
+  
   def keep_alive?(alive_cells, {x, y} = _alive_cell) do
     case count_neighbours(alive_cells, x, y, 0) do
       2 -> true
