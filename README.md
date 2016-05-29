@@ -1,6 +1,6 @@
 # GameOfLife
 
-**TODO: Add description**
+A study repo for an Elixir distributed Game of Life
 
 ## Installation
 
@@ -17,4 +17,3 @@ If [available in Hex](https://hex.pm/docs/publish), the package can be installed
         def application do
           [applications: [:game_of_life]]
         end
-
