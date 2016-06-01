@@ -31,7 +31,7 @@ defmodule GameOfLife.GamePrinter do
   def print_board do
     {alive_cells, generation_counter} = GameOfLife.BoardServer.state
     alive_counter = alive_cells |> Enum.count
-    GameOfLife.Presenters.Console.Print(alive_cells, generation_counter, alive_counter)
+    GameOfLife.Presenters.Console.print(alive_cells, generation_counter, alive_counter)
   end
 
   def stop_printing_board do
